@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once("../modeles/bd.php");
-    require_once("../modeles/utilisation.php");
+    require_once("../modeles/utilisateur.php");
     
     if (isset($_POST["login"]) && isset($_POST["mdp"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["statut"]))
     {
