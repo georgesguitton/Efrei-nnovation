@@ -1,30 +1,49 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  <title>Efrei'nnovation</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+<title>Efrei'nnovation</title>
 </head>
-<body id="corpsConnexion">
-    <div id="divConnexion">
-        <h1>Bienvenue sur Efrei'nnovation !</h1>
-        <img src="images/logo.png">
-        <h2>Veuillez vous connecter ou créer un compte</h2>
-        <form method="post" action="../controleurs/connexion.php">
-            <p>Login : <input type="text" autocomplete="off" name="login" placeholder="Entrez ici votre login" value="" required/></p>
-            <p>Mot de passe : <input type="password" name="mdp" placeholder="Entrez ici votre mot de passe" value="" required/></p>
-            <p><input type="submit" class="btn btn-primary" value="Me connecter" /></p>
-        </form>
-        <a href="inscription.html"><button type="button" class="btn btn-primary">Créer un compte</button></a>
-    </div>
+<body>
+	<div class="container text-center mt-5">
+		<h1>Bienvenue sur Efrei'nnovation !</h1>
+		<img src="images/logo.png">
+		<form method="post" action="../controleurs/connexion.php" class="mt-4">
+			<fieldset class="pt-4">
+				<legend>Veuillez vous connecter ou créer un compte</legend>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="login">Identifiant</label>
+						<input type="text" class="form-control" autocomplete="off" id="login" name="login"
+							placeholder="Entrez ici votre identifiant" value="" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="mdp">Mot de passe :</label>
+						<input type="password" class="form-control" id="mdp" name="mdp" placeholder="Entrez ici votre mot de passe"
+							value="" required>
+					</div>
+					<div class="form-check form-check-inline col-md-2">
+						<button type="submit" class="btn btn-primary">Me connecter</button>
+					</div>
+					<div class="form-check form-check-inline col-md-2">
+						<a href="inscription.html"><button type="button" class="btn btn-primary">Créer un compte</button></a>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
 </body>
-<footer>
-  <p id="footer">Site créé par Ancelet Paul, El Baied Sami, Guitton Georges, Lécuyer Alexis et Oubenami Nour-Eddine</p>
+<footer class="page-footer font-small fixed-bottom">
+	<div class="text-center py-3">
+		<span id="footer">Site créé par Ancelet Paul, El Baied Sami, Guitton Georges, Lécuyer Alexis et Oubenami
+			Nour-Eddine.</span>
+	</div>
 </footer>
 </html>

@@ -11,50 +11,51 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body id="corpsConnexion">
-	<div id="divConnexion">
-		<img src="./images/logo.png" alt="Logo" class="mb-4">
-		<div class="container">
-			<form method="post" action="../controleurs/inscription.php">
-				<fieldset>
-					<legend>Création de compte</legend>
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<label for="login">Login</label>
-							<input type="text" class="form-control" id="login" name="login" autocomplete="off"
-								placeholder="Entrez ici votre login" value="" required>
-						</div>
-						<div class="form-group col-md-6">
-							<label for="password">Password</label>
-							<input type="password" class="form-control" id="password" name="mdp" autocomplete="off"
-								placeholder="Entrez ici votre mot de passe" value="" required>
-						</div>
-						<div class="form-group col-md-6">
-							<label for="nom">Nom</label>
-							<input type="text" class="form-control" id="nom" name="nom" autocomplete="off"
-								placeholder="Entrez ici votre nom" value="" required>
-						</div>
-						<div class="form-group col-md-6">
-							<label for="prenom">Prénom</label>
-							<input type="text" class="form-control" id="prenom" name="prenom" autocomplete="off"
-								placeholder="Entrez ici votre prénom" value="" required>
-						</div>
-						<div class="form-check form-check-inline col-md-1">
-							<input class="form-check-input" type="radio" id="etudiant" name="statut" value="" required>
-							<label class="form-check-label" for="etudiant">Étudiant</label>
-						</div>
-						<div class="form-check form-check-inline col-md-1">
-							<input class="form-check-input" type="radio" id="enseignant" name="statut" value="" required>
-							<label class="form-check-label" for="enseignant">Enseignant</label>
-						</div>
+<body>
+	<div class="container pt-5 text-center">
+		<img src="./images/logo.png" alt="Logo">
+		<form method="post" action="../controleurs/inscription.php" class="mt-4">
+			<fieldset class="pt-4">
+				<legend>Création de compte</legend>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="login">Login</label>
+						<input type="text" class="form-control" id="login" name="login" autocomplete="off"
+							placeholder="Entrez ici votre identifiant" value="" required>
 					</div>
-					<button type="submit" class="btn btn-primary mt-4">Valider</button>
-				</fieldset>
-			</form>
-		</div>
+					<div class="form-group col-md-6">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" name="mdp" autocomplete="off"
+							placeholder="Entrez ici votre mot de passe" value="" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="nom">Nom</label>
+						<input type="text" class="form-control" id="nom" name="nom" autocomplete="off"
+							placeholder="Entrez ici votre nom" value="" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="prenom">Prénom</label>
+						<input type="text" class="form-control" id="prenom" name="prenom" autocomplete="off"
+							placeholder="Entrez ici votre prénom" value="" required>
+					</div>
+					<div class="form-check form-check-inline col-md-1">
+						<input class="form-check-input" type="radio" id="etudiant" name="statut" value="" required>
+						<label class="form-check-label" for="etudiant">Étudiant</label>
+					</div>
+					<div class="form-check form-check-inline col-md-1">
+						<input class="form-check-input" type="radio" id="enseignant" name="statut" value="" required>
+						<label class="form-check-label" for="enseignant">Enseignant</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary mt-4">S'inscrire</button>
+			</fieldset>
+		</form>
 	</div>
 </body>
-<footer>
-	<p id="footer">Site créé par Ancelet Paul, El Baied Sami, Guitton Georges, Lécuyer Alexis et Oubenami Nour-Eddine</p>
+<footer class="page-footer font-small fixed-bottom">
+	<div class="text-center py-3">
+		<span id="footer">Site créé par Ancelet Paul, El Baied Sami, Guitton Georges, Lécuyer Alexis et Oubenami
+			Nour-Eddine.</span>
+	</div>
 </footer>
 </html>

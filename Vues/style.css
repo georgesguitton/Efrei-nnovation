@@ -46,16 +46,11 @@ body {
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
 	background-color: var(--blue);
-	width: 100%;
 }
 
 #footer {
 	color: white;
-	text-align: center;
-	margin-top: 1%;
 }
 
 #innovations {
@@ -63,19 +58,7 @@ footer {
 }
 
 #innovSemaine {
-	color: var(--darkGray);
-	text-align: center;
 	font-size: xx-large;
-}
-
-#corpsConnexion {
-	text-align: center;
-	background-color: var(--lightGray);
-	height: 100%;
-	margin: auto;
-}
-#divConnexion {
-	margin-top: 5%;
 }
 
 h2 {
