@@ -15,5 +15,4 @@
         $m = new utilisateur($co,$login,$mdp,$nom,$prenom,$statut);
     }
         header('Location:../Vues/connexion.html');
-}
 ?>
