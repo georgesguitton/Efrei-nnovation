@@ -33,6 +33,11 @@
             header('Location:../Vues/connexion.html');
         }
     } 
+    $coBd = new bd("efreinnovation");
+    $co = $coBd->connexion();
+    $m = new utilisateur($co,$login,$mdp,$nom,$prenom,$statut);
+    }
+    header('Location:../Vues/connexion.html');
 ?>
 
 
